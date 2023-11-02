@@ -8,7 +8,7 @@
 
   <body>
     <div class="page-contanier">
-      <header class="main-header">
+      <шапка data-test="header" class="main-header">
         <img class="header-logo-image" src="" alt="Логотип города Седона «City of Sedona»." width="139" height="70">
         <nav class="navigation">
           <ul class="navigation-list">
@@ -39,11 +39,11 @@
           </ul>
         </nav>
 
-      </header>
+      </шапка>
 
 
-      <main class="main-container main-inner">
-        <div class="filter">
+      <основное-содержание data-test="main" class="main-container main-inner">
+        <блок-фильтр data-test="div" class="filter">
           <header class="inner-header">
             <h1 class="inner-header-tittle">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
@@ -111,8 +111,8 @@
               <button class="button-reset" type="reset">Сбросить</button>
             </div>
           </form>
-        </div>
-        <section class="catalog">
+        </блок-фильтр>
+        <блок-каталог data-test="section" class="catalog">
           <div class="hotel-sort">
             <h2 class="hotel-sort-title">Найдено гостиниц:38</h2>
 
@@ -251,9 +251,9 @@
               </li>
             </ul>
           </div>
-        </section>
+        </блок-каталог>
 
-        <div class="subscribe">
+        <блок-подписки sata-test="div" class="subscribe">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-description">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/">
@@ -261,11 +261,11 @@
             <input class="field" placeholder="Ваш e-mail" type="email" name="useremail" id="useremail" required>
             <button class="subscribe-button" type="submit">Подписаться</button>
           </form>
-        </div>
-      </main>
+        </блок-подписки>
+      </основное-содержание>
 
 
-      <footer class="page-footer">
+      <подвал data-test="footer" class="page-footer">
         <div class="page-footer-container">
           <section class="footer-social">
             <h2 class="visually-hidden">Соцсети</h2>
@@ -299,7 +299,7 @@
                 alt="Логотип html academy."></a>
           </section>
         </div>
-      </footer>
+      </подвал>
     </div>
   </body>
 

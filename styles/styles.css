@@ -23,6 +23,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  min-width: 1340px;
   min-height: 100%;
   margin: 0;
 
@@ -167,9 +168,9 @@ body {
 .navigation-link-current::before {
   content: "";
   position: absolute;
-  right: 20px;
+  right: 16px;
   bottom: 0;
-  left: 20px;
+  left: 16px;
 
   height: 2px;
 
@@ -347,7 +348,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding-bottom: 69px;
+  padding-bottom: 90px;
 }
 
 .advantages-ad {
@@ -422,10 +423,19 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 400px;
-  min-height: 385px;
+  width: 230px;
 
   text-align: center;
+}
+
+.text-advantage {
+  padding: 102px 85px;
+}
+
+.advantage-item-icon-home,
+.advantage-item-icon-food,
+.advantage-item-icon-gift {
+  padding: 81px 85px;
 }
 
 .advantage-description {
@@ -435,6 +445,10 @@ body {
 .advantages-city .advantage-title-city {
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.advantages-header-title {
+  margin-bottom: 25px;
 }
 
 .advantages-header-text,
@@ -524,13 +538,17 @@ body {
 
 .subscribe-form {
   display: flex;
+  justify-content: center;
+  min-height: 52px;
+  margin: 0;
+  padding: 0;
 }
 
 .field {
   position: relative;
 
+  box-sizing: border-box;
   width: 452px;
-  height: 52px;
   padding: 0;
   padding-left: 20px;
 
@@ -549,8 +567,8 @@ body {
 }
 
 .subscribe-button {
+  display: inline-block;
   width: 232px;
-  height: 52px;
   padding: 0;
 
   font-weight: 700;
@@ -572,6 +590,7 @@ body {
 
 .subscribe-button:focus {
   background-color: rgba(104, 162, 202, 1);
+  outline: none;
 }
 
 .subscribe-button:active {
@@ -596,20 +615,13 @@ body {
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
-  min-height: 120px;
-  margin: 0 auto;
-}
-
-.footer-social {
-  margin-left: 70px;
+  min-height: 50px;
+  margin: 0;
+  padding: 45px 70px 35px;
 }
 
 .footer-contacts {
   width: 720px;
-}
-
-.footer-logo {
-  margin-right: 70px;
 }
 
 .footer-social-list {
@@ -659,6 +671,8 @@ body {
 }
 
 .footer-contacts-phone {
+  max-width: 450px;
+
   font-size: 40px;
   line-height: 40px;
   text-align: center;
@@ -1006,7 +1020,7 @@ body {
   top: 41px;
   left: 50%;
 
-  display: block;
+  display: none;
   width: 215px;
   padding-top: 20px;
   padding-right: 18px;
@@ -1047,6 +1061,11 @@ body {
   position: absolute;
 
   margin-left: 10px;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
 }
 
 .children-input-wrapper {
@@ -1246,7 +1265,7 @@ body {
 .select-control {
   width: 292px;
   min-height: 49px;
-  margin-right: 10px;
+  margin-right: 70px;
   padding: 12px 40px 12px 20px;
 
   font-size: 18px;
@@ -1261,7 +1280,9 @@ body {
   border-radius: 4px;
   cursor: pointer;
 
-  appearance: none;
+  -webkit-appearance: none;
+
+          appearance: none;
 }
 
 .select-control:hover,
@@ -1277,7 +1298,8 @@ body {
 }
 
 .control:hover {
-  opacity: 0.6;;
+  opacity: 0.6;
+  ;
 }
 
 .control:active {
@@ -1405,7 +1427,9 @@ body {
   background-color: #f2f2f2;
   border: none;
 
-  appearance: none;
+  -webkit-appearance: none;
+
+          appearance: none;
 }
 
 .range-wrapper-inputs input:hover {
@@ -1488,8 +1512,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .product-card-stars {
   display: flex;
-  width: 140px;
-  padding: 8px 0;
+  padding: 10px 0;
 
   list-style: none;
 }
@@ -1510,24 +1533,29 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .sorting-type-group {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 522px;
-  height: 49px;
+  min-width: 522px;
+  min-height: 49px;
+  margin: 0;
 }
 
 .select-tougle-group {
   display: flex;
-  justify-content: space-between;
-  width: 160px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  min-width: 160px;
+}
+
+.select-tougle-group a:not(:last-child) {
+  margin-right: 8px;
 }
 
 .card-grid-toggle {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 48px;
-  height: 48px;
+  width: 46px;
+  height: 46px;
 
   border: 2px solid rgba(229, 229, 229, 1);
   border-radius: 4px;
@@ -1543,6 +1571,11 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .card-grid-toggle:focus {
   border-color: rgba(104, 162, 202, 1);
+  outline: none;
+}
+
+.card-grid-toggle:active {
+  border-color: #000000;
 }
 
 .button-apply {
@@ -1569,6 +1602,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .button-apply:focus {
   background-color: rgba(104, 162, 202, 1);
+  outline: none;
 }
 
 .button-apply:active {
@@ -1587,6 +1621,7 @@ input[type="number"]::-webkit-inner-spin-button {
   background-color: rgba(229, 229, 229, 1);
   cursor: default;
 }
+
 .button-reset {
   font-weight: 700;
   font-family: inherit;
@@ -1654,11 +1689,6 @@ input[type="number"]::-webkit-inner-spin-button {
   text-align: right;
 }
 
-.product-card-button,
-.product-card-stars {
-  height: 37px;
-}
-
 .product-card-image {
   display: block;
   width: 100%;
@@ -1680,12 +1710,20 @@ input[type="number"]::-webkit-inner-spin-button {
 .product-card-content b,
 .product-card-stars,
 .product-card-rating {
-  display: block;
   width: 140px;
-  height: 20px;
-  margin: 0;
 
   font-weight: 400;
+}
+
+.product-card-stars .card-star:not(:last-child) {
+  margin-right: 6px;
+}
+
+.card-star {
+  width: 18px;
+  height: 17px;
+
+  background: url(../images/star.svg) no-repeat 50% 50%;
 }
 
 .product-card-link {
@@ -1735,6 +1773,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .detail:focus {
   background-color: rgba(97, 80, 72, 1);
+  outline: none;
 }
 
 .detail:active {
@@ -1767,6 +1806,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .favorites:focus {
   background-color: rgba(104, 162, 202, 1);
+  outline: none;
 }
 
 .favorites:active {
@@ -1788,6 +1828,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .pagination {
   display: flex;
   flex-wrap: wrap;
+  max-width: 400px;
   margin: 0;
   margin-top: 39px;
   padding: 0;
@@ -1798,8 +1839,8 @@ input[type="number"]::-webkit-inner-spin-button {
 .pagination-link {
   display: block;
   box-sizing: border-box;
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
   margin: 0;
   padding-top: 11.36px;
 
@@ -1833,6 +1874,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .pagination-blue:focus {
   background-color: rgba(104, 162, 202, 1);
+  outline: none;
 }
 
 .pagination-blue:active {

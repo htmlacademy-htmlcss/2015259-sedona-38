@@ -60,8 +60,6 @@
           </ul>
         </nav>
       </header>
-
-
       <main class="main-container main-inner">
         <div class="filter">
           <header class="inner-header">
@@ -72,16 +70,13 @@
                   <span class="visually-hidden">Главная</span>
                 </a>
               </li>
-
               <li>
                 <a class="breadcrumbs-link href#">Гостиницы</a>
               </li>
             </ul>
           </header>
-
           <h2 class="visually-hidden" hidden>Фильтр</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-
             <div class="filter-left-contanier">
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -109,7 +104,6 @@
                   </li>
                 </ul>
               </fieldset>
-
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Тип Жилья:</legend>
                 <ul class="catalog-filter-list">
@@ -119,7 +113,6 @@
                         checked>
                       <span class="control-mark"></span>
                       <span class="control-label">Гостиница</span>
-
                     </label>
                   </li>
                   <li class="catalog-filter-item">
@@ -135,26 +128,26 @@
                         value="apartments">
                       <span class="control-mark"></span>
                       <span class="control-label">Апартаменты</span>
-
                     </label>
                   </li>
                 </ul>
               </fieldset>
             </div>
-
             <div class="filter-right-contanier">
               <fieldset class="catalog-price-range">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-
-
                 <div class="range">
                   <div class="range-wrapper-inputs">
                     <label class="range-lebel">
-                      <input class="range-field" type="number" value="0" id="from-ptice" name="from-price">
+                      <div class="counter">
+                        <input class="range-field" type="number" value="0" id="from-ptice" name="from-price">
+                      </div>
                       <span>от</span>
                     </label>
                     <label class="range-lebel">
-                      <input class="range-field" type="number" value="9000" id="to-ptice" name="to-price">
+                      <div class="counter">
+                        <input class="range-field" type="number" value="9000" id="to-ptice" name="to-price">
+                      </div>
                       <span>до</span>
                     </label>
                   </div>
@@ -170,31 +163,23 @@
                   </div>
                 </div>
               </fieldset>
-
               <div class="button-contanier">
                 <button class="button-apply" type="submit">Применить</button>
                 <button class="button-reset" type="reset">Сбросить</button>
               </div>
             </div>
-
           </form>
         </div>
-
-
         <section class="catalog">
-
           <div class="hotel-sort">
             <h2 class="hotel-sort-title">Найдено гостиниц: 38</h2>
-            <div class="sorting-type-group">
-              <div class="select">
-                <select class="select-control" aria-label="Сортировка">
-                  <option value="popular">Сначала дешёвые</option>
-                  <option value="cheap">Сначала популярные</option>
-                  <option value="expensive">Сначала дорогие</option>
-                </select>
-              </div>
-
-              <div class="select-tougle-group">
+            <select class="select-control" aria-label="Сортировка">
+              <option value="popular">Сначала дешёвые</option>
+              <option value="cheap">Сначала популярные</option>
+              <option value="expensive">Сначала дорогие</option>
+            </select>
+            <ul class="select-tougle-group">
+              <li class="select-tougle-item">
                 <a href="#" class="card-grid-toggle card-grid-toggle-current">
                   <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"
@@ -202,14 +187,16 @@
                   </svg>
                   <span class="visually-hidden">Показать карточки</span>
                 </a>
-
+              </li>
+              <li class="select-tougle-item">
                 <a href="#" class="card-grid-toggle">
                   <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000" />
                   </svg>
                   <span class="visually-hidden">Показать слайд-шоу</span>
                 </a>
-
+              </li>
+              <li class="select-tougle-item">
                 <a href="#" class="card-grid-toggle">
                   <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -218,12 +205,10 @@
                   </svg>
                   <span class="visually-hidden">Показать список</span>
                 </a>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
-
           <div class="search-results">
-
             <ul class="product-list">
               <li class="product-card">
                 <a class="product-card-link" href="product.html">
@@ -231,9 +216,7 @@
                     alt="Amara Resort & Spa.">
                   <h3 class="product-card-title">Amara Resort & Spa</h3>
                 </a>
-
                 <div class="product-card-content">
-
                   <b class="product-card-type">Гостиница</b>
                   <b class="product-card-price">От 4000 ₽</b>
                   <a class="product-card-button detail" href="#">Подробнее</a>
@@ -245,20 +228,15 @@
                     <li class="card-star"></li>
                   </ul>
                   <span class="product-card-rating">Рейтинг: 8,5</span>
-
                 </div>
               </li>
-
               <li class="product-card">
-
                 <a class="product-card-link" href="product.html">
                   <img class="product-card-image" src="images/hotels/hotel-2.jpg" width="300" height="211"
                     alt="Villas at Poco Diablo.">
                   <h3 class="product-card-title">Villas at Poco Diablo</h3>
                 </a>
                 <div class="product-card-content">
-
-
                   <b class="product-card-type">Гостиница</b>
                   <b class="product-card-price">От 5000 ₽</b>
                   <a class="product-card-button detail" href="#">Подробнее</a>
@@ -270,10 +248,8 @@
                     <li class="card-star"></li>
                   </ul>
                   <span class="product-card-rating">Рейтинг: 9,2</span>
-
                 </div>
               </li>
-
               <li class="product-card">
                 <a class="product-card-link" href="product.html">
                   <img class="product-card-image" src="images/hotels/hotel-3.jpg" width="300" height="211"
@@ -281,8 +257,6 @@
                   <h3 class="product-card-title">Desert Quail Inn</h3>
                 </a>
                 <div class="product-card-content">
-
-
                   <b class="product-card-type">Гостиница</b>
                   <b class="product-card-price">От 2500 ₽</b>
                   <a class="product-card-button detail" href="#">Подробнее</a>
@@ -293,10 +267,8 @@
                     <li class="card-star"></li>
                   </ul>
                   <span class="product-card-rating">Рейтинг: 6,9</span>
-
                 </div>
               </li>
-
               <li class="product-card">
                 <a class="product-card-link" href="product.html">
                   <img class="product-card-image" src="images/hotels/hotel-4.jpg" width="300" height="211"
@@ -304,8 +276,6 @@
                   <h3 class="product-card-title">GreenTree Inn</h3>
                 </a>
                 <div class="product-card-content">
-
-
                   <b class="product-card-type">Гостиница</b>
                   <b class="product-card-price">От 1500 ₽</b>
                   <a class="product-card-button detail" href="#">Подробнее</a>
@@ -316,12 +286,10 @@
                     <li class="card-star"></li>
                   </ul>
                   <span class="product-card-rating">Рейтинг: 5,0</span>
-
                 </div>
               </li>
             </ul>
           </div>
-
           <ul class="pagination">
             <li class="pagination-item">
               <a class="pagination-link pagination-current">1</a>
@@ -342,12 +310,11 @@
               <a class="pagination-link pagination-blue" href="#">10</a>
             </li>
           </ul>
-
         </section>
-
         <div class="subscribe">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-          <p class="subscribe-description">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
+          <p class="subscribe-description catalog-description">Только полезная информация и никакого спама, <br> честное
+            бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/">
             <label class="visually-hidden" for="useremail">Email</label>
             <input class="field" placeholder="Ваш e-mail" type="email" name="useremail" id="useremail" required>
@@ -355,8 +322,6 @@
           </form>
         </div>
       </main>
-
-
       <footer class="page-footer">
         <div class="page-footer-container">
           <section class="footer-social">
@@ -397,12 +362,10 @@
               </li>
             </ul>
           </section>
-
           <section class="footer-contacts">
             <h2 class="visually-hidden">Контакты</h2>
             <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           </section>
-
           <section class="footer-logo">
             <h2 class="visually-hidden">html academy</h2>
             <a href="https://htmlacademy.ru/">

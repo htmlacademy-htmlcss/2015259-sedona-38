@@ -137,6 +137,14 @@ body {
   background-color: #ffffff;
 }
 
+.navigation-link:hover {
+  color: #756257;
+}
+
+.navigation-link:active {
+  color: #7562574d;
+}
+
 .navigation-link-current::before {
   content: "";
   position: absolute;
@@ -277,8 +285,6 @@ body {
 }
 
 .promo-text-image {
-  width: 458px;
-  height: 352px;
   margin-bottom: 25px;
 }
 
@@ -679,8 +685,6 @@ body {
 .footer-logo-icon:active path {
   fill: rgba(117, 97, 87, 0.3);
 }
-
-/*форма*/
 
 .modal-contanier {
   position: fixed;
@@ -1294,6 +1298,20 @@ body {
   right: -10px;
 }
 
+.range-toggle:hover {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:focus {
+  outline: 3px solid #83b3d3;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:active {
+  outline: 2px solid #83b3d3;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
+}
+
 .range-wrapper-inputs {
   position: relative;
   display: flex;
@@ -1346,8 +1364,8 @@ body {
   border-radius: 0 4px 4px 0;
 }
 
-.counter input[type="number"]::-webkit-outer-spin-button,
-.counter input[type="number"]::-webkit-inner-spin-button {
+.counter::-webkit-outer-spin-button,
+.counter::-webkit-inner-spin-button {
   display: none;
 }
 
@@ -1402,7 +1420,7 @@ body {
 }
 
 .catalog {
-  padding: 50px 70px 40px;
+  padding: 50px 70px 60px;
 }
 
 .select-tougle-group {
@@ -1424,8 +1442,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 46px;
-  height: 46px;
+  width: 45px;
+  height: 45px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
 }
@@ -1646,6 +1664,10 @@ body {
   border: none;
 }
 
+.product-card-button.button-green {
+  background-color: #7db54f;
+}
+
 .favorites:hover {
   background-color: #68a2ca;
 }
@@ -1667,6 +1689,20 @@ body {
 
 .favorites:disabled:hover {
   background-color: #e5e5e5;
+}
+
+.button-green:hover {
+  background-color: #6c9e42;
+}
+
+.button-green:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #7db54f;
+}
+
+.button-green:focus {
+  background-color: #6c9e42;
+  outline: none;
 }
 
 .pagination {

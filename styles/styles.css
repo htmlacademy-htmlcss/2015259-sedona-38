@@ -145,6 +145,15 @@ body {
   color: #7562574d;
 }
 
+
+.navigation-link-icon:hover path {
+  fill: #756257;
+}
+
+.navigation-link-icon:active path {
+  fill:  #7562574d;
+}
+
 .navigation-link-current::before {
   content: "";
   position: absolute;
@@ -553,6 +562,10 @@ body {
 .subscribe-form .field:focus {
   outline: 3px solid #82b3d3;
   outline-offset: -3px;
+}
+
+.subscribe-form .field:hover {
+  background-color: #e6e6e6;
 }
 
 .subscribe-button {
@@ -1494,7 +1507,7 @@ body {
   background-color: #82b3d3;
 }
 
-.sutton-apply:disabled {
+.button-apply:disabled {
   color: #ffffff;
   background-color: #e5e5e5;
 }
